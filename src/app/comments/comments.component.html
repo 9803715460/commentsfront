@@ -1,0 +1,18 @@
+<img src="../../assets/images/a.jpg">
+
+<div>
+
+  <div *ngFor="let item of comments">
+    <table>
+      <tr>
+        <td>
+          {{item.comments}}
+        </td>
+      </tr>
+
+    </table>
+
+  </div>
+  <input placeholder="Enter Comments..." type="text" #keyword />
+  <input type="button" class="btn btn-primary" (click)="addComment(keyword.value)" value="add comment" />
+</div>
